@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+
+:root {
+    --green: #119706;
+    --bgGreen : #ECFFE3;
+    --lightGreen : : #119706
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrap-padding {
+  padding: 10px 50px;
+}
+
+.navbar {
+  box-shadow: 0px 0px 6px 0px grey;
+  margin-bottom : 2%
+}
+
+.navbar-text {
+  font-size: 11px;
+}
+
+
+footer {
+    background-color: var(--green);
+}
+
+footer div {
+    margin: 20px 0px;
+}
+
+.title{
+    font-size :62px;
+    text-align: center;
+    color : var(--green);
+    font-weight : semi-bold
+}
+
+
+/* pagination */
+.pagination {
+    padding : 1% 1%;
+    margin-top: 5%;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+}
+.pagination .pagination-btn{
+    color: var(--green);
+    border: 3px solid; 
+    padding: 0.5% 1.5%;
+    background-color : white;
+}
+
+.pagination form{
+    width: 40%;
+    height: 10%;
+}
+.pagination form div:nth-of-type(1){
+    border-radius: 5px;
+
+}
+
+
+
+
+/* card */
+.custom-card {
+    width: 16.5rem; 
+    text-align: center;
+    padding: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border : none;
+    margin: 15px
+}
+.custom-card span {
+    font-size: 13px;
+    position: absolute;
+    top: 5%; left: 2%;
+    background-color: green;
+    padding: 2px 3px;
+    color: white; 
+    border-radius: 3px;
+}
+
+.custom-card img {
+    border-radius: 5px;
+    background-color: grey;
+}
+.card-body {
+    color: var(--green);
+}
+
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+    
+    .title {
+        font-size: 30px;
+      }
+
+      .pagination .pagination-btn{
+        color: var(--green);
+        border: 3px solid; 
+        padding: 0% 3%;
+    }
+
+    .pagination form{
+        width: 50%;
+        height: 5%;
+        margin-bottom : 2.5% 
+    }
+    .custom-card {
+        width: 13rem; 
+        margin: 10px 10px 10px 30px
+
+    }
+    .custom-card span {
+        font-size: 10px;
+    }
+
+    .card-body {
+        color: var(--green);
+        font-size : 13px
+    }
+      
+  
+  }
+  
