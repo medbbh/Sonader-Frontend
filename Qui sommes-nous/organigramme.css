@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+
+:root {
+  --green: #119706;
+}
+body {
+  font-family: Poppins;
+}
+
+.wrap-padding {
+  padding: 10px 50px;
+}
+
+.navbar {
+  box-shadow: 0px 0px 6px 0px grey;
+  margin-bottom: 20px;
+}
+
+.navbar-text {
+  font-size: 11px;
+}
+
+.hero_section h1 {
+  color: var(--green);
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  margin-top: 10%
+}
+
+.hero_section p {
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: 5px;
+  padding-left: 4%;
+  margin-bottom: 5%;
+}
+
+.section_title {
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 4%;
+  
+}
+.section_title p {
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: 5px;
+}
+
+ul li {
+  list-style: disc;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list-link,
+.list-link:hover {
+  color: var(--green);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.link-icon {
+  color: var(--green);
+}
+
+footer {
+  background-color: var(--green);
+}
+footer div {
+  margin: 20px 0px;
+}
+
+
+.link_chema,
+.link_chema:hover {
+  margin: 10% -1%;
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.modal-body img {
+  max-width: 300px;
+  float: left;
+  margin-right: 2%;
+}
+
+.modal-header button {
+  color: var(--green);
+  border: 3px var(--green) solid;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.text-box h4 {
+  width: 100%;
+  color: var(--green);
+  font-weight: 500;
+}
+/* .text-box p, */
+.text-box ul li {
+  font-size: 15px;
+}
+
+.experience h4 {
+  color: var(--green);
+  font-weight: 600;
+}
+.text-box p {
+  font-size: 18px;
+}
+
+.experience ul li {
+  list-style : none;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.experience li p {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+}
+
+.experience ul li span {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+
+  .link_chema,
+  .link_chema:hover {
+    margin: 10% -5%;
+    color: var(--green);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  .hero_section h1 {
+    font-size: 30px;
+  }
+  .section_title {
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 10%;
+  }
+
+  .text-box h4 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+}

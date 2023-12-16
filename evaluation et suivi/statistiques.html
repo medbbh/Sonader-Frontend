@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+                <div class="navbar-nav navbar-text fw-semibold">
+                    <a href="#" class="nav-item nav-link">Acceuil</a>
+                    <a href="#" class="nav-item nav-link">Programmes de projets</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
+                        <div class="dropdown-menu">
+                            <a href="cartographie.html" class="dropdown-item">Cartographie</a>
+                            <a href="#" class="dropdown-item">Statistiques</a>
+                        </div>
+                    </div> <a href="../admin_regional.html" class="nav-item nav-link text-success">Administrations
+                        régionales</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
+                        <div class="dropdown-menu">
+                            <a href="../Qui sommes-nous/organigramme.html" class="dropdown-item">Organigramme</a>
+                            <a href="../Qui sommes-nous/presentation.html" class="dropdown-item">Presentation</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link">Contactez-nous</a>
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Langues</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Français</a>
+                            <a href="#" class="dropdown-item">Arabe</a>
+                            <a href="#" class="dropdown-item">Anglais</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <div class="input-group border mt-2">
+
+                        <input class="form-control border-0" id="search" type="text" placeholder="Search in site" />
+                        <div class="input-group-addon mt-2 px-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrap-padding statistique">
+        <a class="link_chema">Évaluation et suivi /<span><u><i>Statistiques</i></u></span></a>
+
+        <div class="section_title">
+            <h1 class="sub_title">Statistiques</h1>
+            <p class="h5">
+                Curabitur tincidunt sedneque idlem pretium. Aenean fdelpi volutpatdreb tristique tincidunt.
+                Pellentesque ac urna. volutpatdreb tristique tincidunt. Pellentesque ac urna.
+            </p>
+        </div>
+
+        <div class="justify-content-between row mb-5">
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <select class="rounded-pill">
+                    <option><span>Year : </span>2022</option>
+                    <option><span>Year</span>2021</option>
+                    <option><span>Year</span>2020</option>
+                </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+
+                <select class="rounded-pill">
+                    <span>Hi</span>
+                    <option><span>Region : </span>2022</option>
+                    <option><span>Region</span>2021</option>
+                    <option><span>Region</span>2020</option>
+                </select>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+
+                <select class="rounded-pill">
+                    <option><span>Categorie : </span>2022</option>
+                    <option><span>Categorie</span>2021</option>
+                    <option><span>Categorie</span>2020</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="justify-content-between row">
+
+
+            <div class="chart-card col-lg-4 col-md-6 col-sm-12">
+
+                <h5>Projets</h5>
+                <p class="fw-bold">4,209</p>
+                <canvas id="myChart" width="100" height="100"></canvas>
+
+            </div>
+
+            <div class="statistique-card col-lg-4 col-md-6 col-sm-12">
+
+                <h5>Waterways</h5>
+                <p class="fw-bold">5,340</p>
+                <div class="justify-content-between custom-table">
+                    <p>Rosso<span>139</span></p>
+                    <p>Bababé<span>283</span></p>
+                    <p>Aleg<span>782</span></p>
+                    <p>Rkiz<span>1,923</span></p>
+                    <p>Djonaba<span>103</span></p>
+                    <p>Timbedra<span>477</span></p>
+                </div>
+
+            </div>
+
+            <div class="statistique-card col-lg-4 col-md-6 col-sm-12">
+
+                <h5 style="font-size: 18px">irrigation provided in (h)</h5>
+                
+                <p class="fw-bold">30,000</p>
+                <div class="justify-content-between custom-table">
+                    <p>Rosso<span>15,060</span></p>
+                    <p>Bababé<span>4,800</span></p>
+                    <p>Aleg<span>3,000</span></p>
+                    <p>Rkiz<span>1,923</span></p>
+                    <p>Djonaba<span>10,000</span></p>
+                    <p>Timbedra<span>2,600</span></p>
+                </div>
+
+            </div>
+
+            <div class="barChart-card col-lg-12 ">
+
+                <h5 class="fw-semibold">Agricultural investment</h5>
+                <canvas id="myBarChart" width="10" height="3"></canvas>
+
+            
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">
+        <div class="container text-center">
+            <small>&copy; 2023 Sonader. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <!-- js links -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+
+    <script src="./statistique.js"></script>
+</body>
