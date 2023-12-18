@@ -19,6 +19,12 @@
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <style>
+        #animatedDiv {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +41,8 @@
                     <a href="#" class="nav-item nav-link">Acceuil</a>
                     <a href="../project_page.html" class="nav-item nav-link">Programmes de projets</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #119706;">Évolutions et suivi</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            style="color: #119706;">Évolutions et suivi</a>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item" style="color: #119706;">Cartographie</a>
                             <a href="statistiques.html" class="dropdown-item">Statistiques</a>
@@ -92,164 +99,228 @@
         <div>
 
 
-        <div class="container text-center">
+            <div class="container text-center">
 
-            <img src="../images/mr_1.svg" class="carte_rim" alt="carte de mauritanie">
+                <img src="../images/mr_1.svg" class="carte_rim" alt="carte de mauritanie">
 
-        </div>
+            </div>
 
-        <di class="balls-number">
-            <span class="">1</span>
-        </di>
-        <div class="balls-number">
-            <span class="">2</span>
-        </div>
-        <div class="balls-number">
-            <span class="">3</span>
-        </div>
-        <div class="balls-number">
-            <span class="">4</span>
-        </div>
-        <div class="balls-number">
-            <span class="">5</span>
-        </div>
-        
+            <di class="balls-number">
+                <span class=""><a href="#1" onclick="target1()"
+                        style="color: inherit;text-decoration: inherit;">1</a></span>
+            </di>
+            <div class="balls-number">
+                <span class=""><a href="#2" onclick="target2()"
+                        style="color: inherit;text-decoration: inherit;">2</a></span>
+            </div>
+            <div class="balls-number">
+                <span class=""><a href="#3" onclick="target3()"
+                        style="color: inherit;text-decoration: inherit;">3</a></span>
+            </div>
+            <div class="balls-number">
+                <span class=""><a href="#4" onclick="target4()"
+                        style="color: inherit;text-decoration: inherit;">4</a></span>
+            </div>
+            <div class="balls-number">
+                <span class=""><a href="#5" onclick="target5()"
+                        style="color: inherit;text-decoration: inherit;">5</a></span>
+            </div>
+
         </div>
 
 
         <!-- cards -->
 
-             
+
         <div class="row justify-content-between">
 
 
 
-        <div class="card custom-card col-lg-6 col-sm-12 col-md-12">
-            <div class="card-body">
-                <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
-                <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
-                    fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna. volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna.
-                </p>
-                <div class="custom-list" style="margin-left: -15px;">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
-                                    style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
-                                    style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5" style="color: #119706"></i></span>+
-                            100 Km of waterways & irrigation water to 12,250 h</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5" style="color: #119706"></i></span>+
-                            30.000 hectares of "collective farms"</li>
+            <div class="card custom-card col-lg-6 col-sm-12 col-md-12" id="1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
+                    <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
+                        fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna. volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna.
+                    </p>
+                    <div class="custom-list" style="margin-left: -15px;">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
+                                        style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
+                                        style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5"
+                                        style="color: #119706"></i></span>+
+                                100 Km of waterways & irrigation water to 12,250 h</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5"
+                                        style="color: #119706"></i></span>+
+                                30.000 hectares of "collective farms"</li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-   
-        <div class="card custom-card col-lg-6 col-sm-12 col-md-12">
-            <div class="card-body">
-                <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
-                <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
-                    fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna. volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna.
-                </p>
-                <div class="custom-list" style="margin-left: -15px;">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
-                                    style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
-                                    style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5" style="color: #119706"></i></span>+
-                            100 Km of waterways & irrigation water to 12,250 h</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5" style="color: #119706"></i></span>+
-                            30.000 hectares of "collective farms"</li>
 
-                    </ul>
+            <div class="card custom-card col-lg-6 col-sm-12 col-md-12" id="2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-3"><span class="">2</span>Titre de l’administration regionale</h5>
+                    <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
+                        fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna. volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna.
+                    </p>
+                    <div class="custom-list" style="margin-left: -15px;">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
+                                        style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
+                                        style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5"
+                                        style="color: #119706"></i></span>+
+                                100 Km of waterways & irrigation water to 12,250 h</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5"
+                                        style="color: #119706"></i></span>+
+                                30.000 hectares of "collective farms"</li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card custom-card col-lg-6 col-sm-12 col-md-12">
-            <div class="card-body">
-                <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
-                <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
-                    fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna. volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna.
-                </p>
-                <div class="custom-list" style="margin-left: -15px;">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
-                                    style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
-                                    style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5" style="color: #119706"></i></span>+
-                            100 Km of waterways & irrigation water to 12,250 h</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5" style="color: #119706"></i></span>+
-                            30.000 hectares of "collective farms"</li>
+            <div class="card custom-card col-lg-6 col-sm-12 col-md-12" id="3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-3"><span class="">3</span>Titre de l’administration regionale</h5>
+                    <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
+                        fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna. volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna.
+                    </p>
+                    <div class="custom-list" style="margin-left: -15px;">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
+                                        style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
+                                        style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5"
+                                        style="color: #119706"></i></span>+
+                                100 Km of waterways & irrigation water to 12,250 h</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5"
+                                        style="color: #119706"></i></span>+
+                                30.000 hectares of "collective farms"</li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card custom-card col-lg-6 col-sm-12 col-md-12">
-            <div class="card-body">
-                <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
-                <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
-                    fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna. volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna.
-                </p>
-                <div class="custom-list" style="margin-left: -15px;">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
-                                    style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
-                                    style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5" style="color: #119706"></i></span>+
-                            100 Km of waterways & irrigation water to 12,250 h</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5" style="color: #119706"></i></span>+
-                            30.000 hectares of "collective farms"</li>
+            <div class="card custom-card col-lg-6 col-sm-12 col-md-12" id="4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-3"><span class="">4</span>Titre de l’administration regionale</h5>
+                    <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
+                        fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna. volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna.
+                    </p>
+                    <div class="custom-list" style="margin-left: -15px;">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
+                                        style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
+                                        style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5"
+                                        style="color: #119706"></i></span>+
+                                100 Km of waterways & irrigation water to 12,250 h</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5"
+                                        style="color: #119706"></i></span>+
+                                30.000 hectares of "collective farms"</li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card custom-card col-lg-6 col-sm-12 col-md-12">
-            <div class="card-body">
-                <h5 class="card-title fw-bold mb-3"><span class="">1</span>Titre de l’administration regionale</h5>
-                <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
-                    fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna. volutpatdreb tristique tincidunt. Pellentesque ac
-                    urna.
-                </p>
-                <div class="custom-list" style="margin-left: -15px;">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
-                                    style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
-                                    style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5" style="color: #119706"></i></span>+
-                            100 Km of waterways & irrigation water to 12,250 h</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5" style="color: #119706"></i></span>+
-                            30.000 hectares of "collective farms"</li>
+            <div class="card custom-card col-lg-6 col-sm-12 col-md-12" id="5">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-3"><span class="">5</span>Titre de l’administration regionale</h5>
+                    <p class="card-text">Curabitur tincidunt sedneque idlem pretium. Aenean
+                        fdelpi volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna. volutpatdreb tristique tincidunt. Pellentesque ac
+                        urna.
+                    </p>
+                    <div class="custom-list" style="margin-left: -15px;">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot fs-5"
+                                        style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
+                                        style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-droplet fs-5"
+                                        style="color: #119706"></i></span>+
+                                100 Km of waterways & irrigation water to 12,250 h</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-seedling fs-5"
+                                        style="color: #119706"></i></span>+
+                                30.000 hectares of "collective farms"</li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
 
-    </div>
 
+    <script>
+        const div1 = document.getElementById("1")
+        const div2 = document.getElementById('2')
+        const div3 = document.getElementById('3')
+        const div4 = document.getElementById('4')
+        const div5 = document.getElementById('5')
 
+        function target1() {
+            div1.style = "scale :1.1"
+
+            // After the animation duration, remove the class to reset for the next click
+            setTimeout(function () {
+                div1.style.scale = "1"
+            }, 500); // 500 milliseconds, should match the transition duration in CSS
+        }
+        function target2() {
+            div2.style = "scale :1.1"
+
+            // After the animation duration, remove the class to reset for the next click
+            setTimeout(function () {
+                div2.style.scale = "1"
+            }, 500); // 500 milliseconds, should match the transition duration in CSS
+        }
+        function target3() {
+            div3.style = "scale :1.1"
+
+            // After the animation duration, remove the class to reset for the next click
+            setTimeout(function () {
+                div3.style.scale = "1"
+            }, 500); // 500 milliseconds, should match the transition duration in CSS
+        }
+        function target4() {
+            div4.style = "scale :1.1"
+
+            // After the animation duration, remove the class to reset for the next click
+            setTimeout(function () {
+                div4.style.scale = "1"
+            }, 500); // 500 milliseconds, should match the transition duration in CSS
+        }
+        function target5() {
+            div5.style = "scale :1.1"
+
+            // After the animation duration, remove the class to reset for the next click
+            setTimeout(function () {
+                div5.style.scale = "1"
+            }, 500); // 500 milliseconds, should match the transition duration in CSS
+        }
+
+    </script>
     <!-- Footer -->
     <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">
         <div class="container text-center">
