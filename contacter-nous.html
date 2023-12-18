@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="contacter-nous.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+                <div class="navbar-nav navbar-text fw-semibold">
+                    <a href="#" class="nav-item nav-link">Acceuil</a>
+                    <a href="project_page.html" class="nav-item nav-link">Programmes de projets</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
+                        <div class="dropdown-menu">
+                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item">Cartographie</a>
+                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item">Statistiques</a>
+                        </div>
+                    </div>
+                    <a href="admin_regional.html" class="nav-item nav-link">Administrations régionales</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
+                        <div class="dropdown-menu">
+                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item">Organigramme</a>
+                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item">Presentation</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link" style="color: #119706;">Contactez-nous</a>
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Langues</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Français</a>
+                            <a href="#" class="dropdown-item">Arabe</a>
+                            <a href="#" class="dropdown-item">Anglais</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <div class="input-group border mt-2">
+
+                        <input class="form-control border-0" id="search" type="text" placeholder="Search in site" />
+                        <div class="input-group-addon mt-2 px-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="wrap-padding"> -->
+
+        <h1 class="title">Contactez-nous</h1>
+
+
+        
+    <!-- </div> -->
+
+    <div class="contact-section">
+
+        <h1>Vous pouvez nous contacter via</h1>
+        <div class="row gap-3">
+            <a class="col-lg-6" target="_blank" rel="noopener" href="https://www.facebook.com/sonader.mauritanie/"><i class="fa-brands fa-square-facebook"></i><span>Sonader</span></a>
+            <a class="col-lg-6"><i class="fa-solid fa-phone"></i><span>+ (222) 45 24 29 99</span></a><br>
+            <a class="col-lg-6" target="_blank" rel="noopener" href = "https://mail.google.com/mail/?view=cm&fs=1&to=sonader@sonader.mr" ><i class="fa-solid fa-envelope"></i><span>sonader@sonader.mr</span></a>
+            <a class="col-lg-6" target="_blank" rel="noopener" href ="https://www.google.com/maps/place/SONADER,+N2,+Nouakchott,+Mauritania/@18.0683226,-15.9692931,17z/data=!3m1!4b1!4m6!3m5!1s0xe96527622afdd4b:0x97c51e85d44b862b!8m2!3d18.068366!4d-15.9693451!16s%2Fg%2F11bvtb_jj2?entry=ttu">
+                <i class="fa-solid fa-location-dot"></i><span>Nouakchott - Mauritanie</span></a>
+
+        </div>
+
+    </div>
+
+    <h1 class="ou-bien"><span>Ou bien</span></h1>
+
+
+
+    <div class="contact-section" style="text-align: center;">
+
+        <form class="contact-form">
+            <label for="name">Nom et Prenom*</label><br>
+            <input id="name" type="text" placeholder="Nom et Prenom"></input><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" type="email" placeholder="Entrez votre email"></input><br>
+
+            <label for="tel">Tel*</label><br>
+            <input id="tel" type="tel" placeholder="00 00 00 00"></input><br>
+
+            <label for="mesage">Message*</label><br>
+            <textarea id="message" placeholder="Entrez votre message ici..."></textarea><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">
+        <div class="container text-center">
+            <small>&copy; 2023 Sonader. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
