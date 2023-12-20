@@ -7,6 +7,7 @@
 }
 body {
   font-family: Poppins;
+  overflow-x: hidden;
 }
 
 .wrap-padding {
@@ -20,6 +21,16 @@ body {
 
 .navbar-text {
   font-size: 11px;
+}
+
+.navbar-brand {
+  max-width : 100px
+}
+
+.navbar-brand img {
+  max-width: 5vw; 
+  display: block;
+  width: 100%;
 }
 
 .hero_section h1 {
@@ -81,7 +92,7 @@ body {
 }
 
 .hero_section img {
-  max-width: 45%;
+  max-width: 25%;
   float: right;
 }
 
@@ -139,8 +150,9 @@ footer div {
     margin-left : 20px;
   }
   .hero_section img {
-    max-width: 130%;
+    max-width: 80%;
     float: right;
+    margin : 20px 
   }
 
   .text-box p {

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
 
 
     <!-- bootstrap css -->
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin_regional.css">
     <title>Document</title>
 </head>
 
@@ -24,13 +26,14 @@
     <!-- nav bar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid ">
-            <a href="#" class="navbar-brand">Brand</a>
+            <a href="index.html" class="navbar-brand"><img src="images/sonader_logo-removebg-preview.png"
+                    alt="logo"></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
                 <div class="navbar-nav navbar-text fw-semibold">
-                    <a href="#" class="nav-item nav-link">Acceuil</a>
+                    <a href="index.html" class="nav-item nav-link">Acceuil</a>
                     <a href="project_page.html" class="nav-item nav-link">Programmes de projets</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
@@ -39,7 +42,8 @@
                             <a href="evaluation et suivi/statistiques.html" class="dropdown-item">Statistiques</a>
                         </div>
                     </div>
-                    <a href="#" class="nav-item nav-link text-success" style="color: #119706;">Administrations régionales</a>
+                    <a href="#" class="nav-item nav-link text-success" style="color: #119706;">Administrations
+                        régionales</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
                         <div class="dropdown-menu">
@@ -77,6 +81,9 @@
 
     <div class="wrap-padding">
 
+        
+
+
         <div class="hero_section">
             <h1 class="fw-bold mt-lg-5 m-lg-5 title">Administrations régionales</h1>
 
@@ -94,6 +101,7 @@
             <img src="images/laptop_on_desk.jpg" class="rounded" alt="" />
 
         </div>
+
         <!-- presentaion -->
         <div class="section_title">
             <h1 class="sub_title">Presentation</h1>
@@ -134,7 +142,7 @@
             </h4>
             <ul>
 
-                <li>
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a class="list-link">Directeur Generale : Mr. XXXXXXX </a>
                     <i class="fa-regular fa-id-card link-icon"></i>
                 </li>
@@ -200,6 +208,95 @@
         </div>
 
     </div>
+
+
+
+
+    <!-- directeur general modal -->
+
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border: none;">
+                    <h3 class="modal-title" id="exampleModalLabel">Directeur General</h3>
+                    <button type="button" class="close rounded-circle" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <i aria-hidden="true" class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="directeur_intro">
+                        <img src="../images/laptop_on_desk.jpg" alt="photo de directeur" class="rounded-1">
+                        <div class="text-box">
+                            <h4>Mr. Hamada Ould Didi Ould Sid Ahmed</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                neque porro nobis,
+                                animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
+                                iusto architecto.
+                                Tenetur ea mollitia repudiandae corporis, nam quaerat velit veritatis cupiditate!
+                                Repudiandae minima
+                                debitis nobis, commodi suscipit tempore nam delectus iste itaque architecto?nimi laborum
+                                expedita voluptate fuga veniam sequi consequatur assumenda obcaecati, iusto architecto.
+                                Tenetur ea mollitia repudiandae corporis, nam quaerat velit veritatis cupiditate!
+                                Repudiandae minima
+                                debitis nobis, commodi suscipit tempore nam delectus iste itaque architecto?
+                            </p>
+                            <ul>
+                                <li><span class="fw-bold">Date de naissance : </span>12-12-1972</li>
+                                <li><span class="fw-bold">Lieu de naissance : </span>Rosso - Mauritanie</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience mt-5">
+                        <h4>Experience :</h4>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>2022 - Present<p
+                                    class="text-dark">Directeur Generale</p><span class="text-black-50">SONADER</span>
+                            </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>2015 - 2021 -Mauritanie<p
+                                    class="text-dark">Directeur de XXXXXXXXXXXXXX en XXXXXXXX</p><span
+                                    class="text-black-50">Societe XXXXXXX</span></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>2003 - 2012 -Mauritanie<p
+                                    class="text-dark">Consultant de XXXXXXXXXXXXXX en XXXXXXXX</p><span
+                                    class="text-black-50">Societe XXXXXXX</span></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>1992 - 2003 -Canada<p
+                                    class="text-dark">Directeur de XXXXXXXXXXXXXX en XXXXXXXX</p><span
+                                    class="text-black-50">Societe XXXXXXX</span></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="experience mt-5">
+                        <h4>Education :</h4>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>2005 - Paris<p
+                                    class="text-dark">Certificat XXXXXX en XXXXXX</p><span
+                                    class="text-black-50">Université XXXXXXX</span></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>1985-1991 - NewYork<p
+                                    class="text-dark">Diplôme de XXXXX en XXXXX</p><span
+                                    class="text-black-50">Université XXXXXXX</span></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>1983-1985 - Paris<p
+                                    class="text-dark">Diplôme de XXXXX en XXXXX</p><span
+                                    class="text-black-50">Université XXXXXXX</span></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span>1980-1983 - Nouakchott<p
+                                    class="text-dark">Diplôme de XXXXX en XXXXX</p><span
+                                    class="text-black-50">Université XXXXXXX</span></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <!-- Footer -->
     <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">

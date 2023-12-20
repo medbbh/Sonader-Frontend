@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand"><img src="images/sonader_logo-removebg-preview.png" alt="logo"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+                <div class="navbar-nav navbar-text fw-semibold">
+                    <a href="#" class="nav-item nav-link" style="color: #119706;">Acceuil</a>
+                    <a href="project_page.html" class="nav-item nav-link">Programmes de projets</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
+                        <div class="dropdown-menu">
+                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item">Cartographie</a>
+                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item">Statistiques</a>
+                        </div>
+                    </div>
+
+                    <a href="admin_regional.html" class="nav-item nav-link">Administrations régionales</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
+                        <div class="dropdown-menu">
+                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item">Organigramme</a>
+                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item">Presentation</a>
+                        </div>
+                    </div>
+                    <a href="contacter-nous.html" class="nav-item nav-link">Contactez-nous</a>
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Langues</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Français</a>
+                            <a href="#" class="dropdown-item">Arabe</a>
+                            <a href="#" class="dropdown-item">Anglais</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <div class="input-group border mt-2">
+
+                        <input class="form-control border-0" id="search" type="text" placeholder="Search in site" />
+                        <div class="input-group-addon mt-2 px-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero-section">
+
+        <h1>THE NATIONAL COMPANY FOR RURAL DEVELOPMENT “SONADER”</h1>
+        <p>Long experience in irrigated agriculture</p>
+        <button><a href="Qui sommes-nous/presentation.html" style="text-decoration: none; color: inherit;">Apprendre encore plus</a></button>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="ticker-title"><span>Nouvelles</span></div>
+
+        <div class="ticker-wrap">
+
+            <div class="ticker">
+                <div class="ticker__item">Place your news text here.</div>
+                <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.
+                </div>
+                <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.
+                </div>
+                <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.
+                </div>
+                <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="pagination justify-content-between">
+        <h1>Nouvelles</h1>
+        <div>
+            <button class="pagination-btn left" onclick="leftScroll()"><i class="fa-solid fa-less-than"></i></button>
+            <button class="pagination-btn right" onclick="rightScroll()"><i
+                    class="fa-solid fa-greater-than"></i></button>
+            <a href="#">Voir plus</a>
+        </div>
+
+    </div>
+
+
+    <div class="cover">
+        <div class="scroll-images">
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+            <div class="card child">
+                <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- second horizontal scrollable cards -->
+    <div class="pagination justify-content-between">
+        <h1>Appels d'offres</h1>
+        <div>
+            <button class="pagination-btn left2" onclick="leftScroll2()"><i class="fa-solid fa-less-than"></i></button>
+            <button class="pagination-btn right2" onclick="rightScroll2()"><i
+                    class="fa-solid fa-greater-than"></i></button>
+            <a href="#">Voir plus</a>
+        </div>
+
+    </div>
+    <div class="cover">
+        <div class="scroll-images2">
+
+            <div class="card child2 " style="width: 18rem;">
+                <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">New</a>
+                    <h5 class="card-title">Titre d’apple</h5>
+
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+
+            <div class="card child2 " style="width: 18rem;">
+                <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title">Titre d’apple</h5>
+
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card child2 " style="width: 18rem;">
+                <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title">Titre d’apple</h5>
+
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card child2 " style="width: 18rem;">
+                <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title">Titre d’apple</h5>
+
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card child2 " style="width: 18rem;">
+                <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title">Titre d’apple</h5>
+
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="pagination justify-content-between">
+        <h1>Activités recentes</h1>
+        <div class="mt-3">
+            <a href="#">Voir plus</a>
+        </div>
+
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/scrollable-image1.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image2.jpeg" alt="Third slide">
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image3.jpeg" alt="Third slide">
+
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image6.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image7.jpeg" alt="Third slide">
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image8.jpeg" alt="Third slide">
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/scrollable-image9.jpeg" alt="Third slide">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev custom-btn" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="" aria-hidden="true"><i class="fa-solid fa-less-than"></i></span>
+            <!-- <span class="sr-only"></span> -->
+        </a>
+        <a class="carousel-control-next custom-btn" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+            <!-- <span class="sr-only"></span> -->
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- Third horizontal scrollable cards -->
+<div class="pagination justify-content-between">
+    <h1>Nos Partenaires</h1>
+    <div>
+        <button class="pagination-btn left3" onclick="leftScroll3()"><i class="fa-solid fa-less-than"></i></button>
+        <button class="pagination-btn right3" onclick="rightScroll3()"><i
+                class="fa-solid fa-greater-than"></i></button>
+        <a href="#">Voir plus</a>
+    </div>
+
+</div>
+<div class="cover">
+    <div class="scroll-images3">
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        <div class="d-block partenaire child3">
+            <img src="images/sonader_logo.jpeg" alt="" >
+            <p>Partenaire 1</p>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollImages = document.querySelector(".scroll-images");
+            const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
+            const leftButton = document.querySelector(".left");
+            const rightButton = document.querySelector(".right");
+
+            function checkScroll() {
+                const currentScroll = scrollImages.scrollLeft;
+                if (currentScroll === 0) {
+                    leftButton.setAttribute("disabled", "true");
+                    rightButton.removeAttribute("disabled");
+                } else if (currentScroll === scrollLength) {
+                    rightButton.setAttribute("disabled", "true");
+                    leftButton.removeAttribute("disabled");
+                } else {
+                    leftButton.removeAttribute("disabled");
+                    rightButton.removeAttribute("disabled");
+                }
+            }
+
+            scrollImages.addEventListener("scroll", checkScroll);
+            window.addEventListener("resize", checkScroll);
+            checkScroll();
+
+            function leftScroll() {
+                scrollImages.scrollBy({
+                    left: -200,
+                    behavior: "smooth"
+                });
+            }
+
+            function rightScroll() {
+                scrollImages.scrollBy({
+                    left: 200,
+                    behavior: "smooth"
+                });
+            }
+
+            leftButton.addEventListener("click", leftScroll);
+            rightButton.addEventListener("click", rightScroll);
+        });
+
+        // second horizontal scroll card
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollImages2 = document.querySelector(".scroll-images2");
+            const scrollLength2 = scrollImages2.scrollWidth - scrollImages2.clientWidth;
+            const leftButton2 = document.querySelector(".left2");
+            const rightButton2 = document.querySelector(".right2");
+
+            function checkScroll2() {
+                const currentScroll = scrollImages2.scrollLeft;
+                if (currentScroll === 0) {
+                    leftButton2.setAttribute("disabled", "true");
+                    rightButton2.removeAttribute("disabled");
+                } else if (currentScroll === scrollLength2) {
+                    rightButton2.setAttribute("disabled", "true");
+                    leftButton2.removeAttribute("disabled");
+                } else {
+                    leftButton2.removeAttribute("disabled");
+                    rightButton2.removeAttribute("disabled");
+                }
+            }
+
+            scrollImages2.addEventListener("scroll", checkScroll2);
+            window.addEventListener("resize", checkScroll2);
+            checkScroll2();
+
+            function leftScroll2() {
+                scrollImages2.scrollBy({
+                    left: -200,
+                    behavior: "smooth"
+                });
+            }
+
+            function rightScroll2() {
+                scrollImages2.scrollBy({
+                    left: 200,
+                    behavior: "smooth"
+                });
+            }
+
+            leftButton2.addEventListener("click", leftScroll2);
+            rightButton2.addEventListener("click", rightScroll2);
+        });
+
+        // partenaire horizontal sroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollImages3 = document.querySelector(".scroll-images3");
+            const scrollLength3 = scrollImages3.scrollWidth - scrollImages3.clientWidth;
+            const leftButton3 = document.querySelector(".left3");
+            const rightButton3 = document.querySelector(".right3");
+
+            function checkScroll3() {
+                const currentScroll = scrollImages3.scrollLeft;
+                if (currentScroll === 0) {
+                    leftButton3.setAttribute("disabled", "true");
+                    rightButton3.removeAttribute("disabled");
+                } else if (currentScroll === scrollLength3) {
+                    rightButton3.setAttribute("disabled", "true");
+                    leftButton3.removeAttribute("disabled");
+                } else {
+                    leftButton3.removeAttribute("disabled");
+                    rightButton3.removeAttribute("disabled");
+                }
+            }
+
+            scrollImages3.addEventListener("scroll", checkScroll3);
+            window.addEventListener("resize", checkScroll3);
+            checkScroll3();
+
+            function leftScroll3() {
+                scrollImages3.scrollBy({
+                    left: -200,
+                    behavior: "smooth"
+                });
+            }
+
+            function rightScroll3() {
+                scrollImages3.scrollBy({
+                    left: 200,
+                    behavior: "smooth"
+                });
+            }
+
+            leftButton3.addEventListener("click", leftScroll3);
+            rightButton3.addEventListener("click", rightScroll3);
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">
+        <div class="container text-center">
+            <small>&copy; 2023 Sonader. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+
+
+
+</body>
+
+</html>

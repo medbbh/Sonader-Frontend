@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+
+:root {
+    --green: #119706;
+    --bgGreen : #ECFFE3;
+    --lightGreen : : #119706
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  box-shadow: 0px 0px 6px 0px grey;
+}
+
+.navbar-text {
+  font-size: 11px;
+}
+.navbar-brand {
+  max-width : 100px
+}
+
+.navbar-brand img {
+  max-width: 5vw; 
+  display: block;
+  width: 100%;
+}
+
+footer {
+    background-color: var(--green);
+  }
+  footer div {
+    margin: 20px 0px;
+  }
+
+
+.hero-section{
+    width :100%;
+    height : 100vh;
+    background-image: url("images/section.png");
+    background-size : cover;
+    text-align : center;
+    padding-top : 10%
+}
+
+.hero-section h1 {
+    color : #FFF;
+    font-size : 64px;
+    font-weight : 700;
+    line-height : 130%
+
+}
+
+.hero-section p {
+    color : #FFF;
+    font-size : 36px;
+    line-height : 24px;
+    padding : 2% 0 1.5% 0  ;
+}
+
+.hero-section button {
+    color : var(--green);
+    font-size : 32px;
+    line-height : 24px;
+    padding : 1.5% 2.5%;
+    border-radius : 15px;
+    border :none;
+    box-shadow: 0 0 10px grey;
+    background-color : white
+}
+
+
+
+/* news bar */
+
+.ticker-title{
+
+    background-color : var(--green);
+    color : white;
+    position : left;
+    height : 5.5rem;
+    width : 15%;
+    text-align : center;
+    font-size: 32px;
+    padding-top : 15px;
+
+} 
+
+.ticker-wrap {
+    /* position: fixed; */
+    /* bottom: 0;
+      left: 0; */
+    width: calc(99% - 15%);
+    float : right;
+    overflow: hidden;
+    height: 4rem;
+    background-color: var(--bgGreen);
+    box-sizing: content-box;
+    margin-bottom : 50px;
+    border : 1px solid var(--green);
+    padding : 10px 0
+  }
+
+  .ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 10s;
+    animation-duration: 45s;
+  }
+  .ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    
+    color: var(--green);
+    font-size: 32px;
+
+  }
+  @-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+.pagination { 
+  margin-bottom : 10px;
+  padding : 0 20px;
+  
+
+}
+
+  .pagination-btn{
+    font-size : 30px;
+    color: var(--green);
+    border: 3px solid; 
+    margin: 0 10px;
+    padding : 1px 10px;
+    background-color : white;
+    margin-top : 20px 
+}
+.pagination a {
+  color : var(--green);
+  font-size : 30px;
+}
+.pagination h1 {
+  color : var(--green);
+  font-size : 80px;
+  margin-left : 15px;
+  font-weight : 700
+}
+
+
+.cover {
+  position: relative;
+  padding: 0px 30px;
+  margin-top: 10px;
+}
+
+.scroll-images ,.scroll-images2,.scroll-images3{
+  position: relative;
+  width: 100%;
+  padding: 40px 0px;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  height: 350px;
+  padding: 20px;
+  margin: 0px 40px 70px 40px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  background-color : var(--bgGreen);
+  border : 1px var(--green) solid
+}
+
+.child2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 47%;
+  height: 200px;
+  padding: 20px;
+  margin: 0px 40px 70px 0px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  border : 1px var(--green) solid
+}
+.child3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  /* height: 200px; */
+  /* padding: 20px; */
+  /* margin: 0px 40px 70px 0px;  */
+  overflow: hidden;
+  flex-direction: row;
+}
+.child2 {
+  flex-direction: row;
+}
+.child2 img {
+  width: 35%;
+  height : 100%;
+  margin-right : 30px ;
+  border-radius : 5px
+}
+.child2 a {
+  color : var(--green);
+  margin-top : 10px 
+}
+.child2 h5{
+  text-size : 32px;
+  line-height: 28px; 
+  margin-top : 10px
+}
+.child2 p {
+  font-size : 19px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.50);
+} 
+.card-body{
+  padding : 10px 0;
+}
+.child img {
+  border : none;
+  border-radius : 5px
+}
+
+.child h1{
+  font-size : 26px;
+  font-weight : 600;
+  line-height : 130%;
+}
+
+.cover button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+
+.carousel {
+  max-width: 80%;
+  margin: auto;
+}
+
+.carousel .carousel-inner img{
+  width:640px;
+  height:460px;
+  border-radius : 15px;
+  margin-bottom : 50px
+
+}
+
+.custom-btn span{
+
+  border : 3px solid var(--green);
+  background-color : white;
+  font-size : 25px;
+  color : var(--green);
+  padding : 5px 15px
+
+}
+
+.scroll-images3 {
+  
+  border : 1px solid var(--green) ;
+  margin : 30px 10px 50px 10px;
+  padding : 20px 30px;
+  border-radius : 15px;
+
+}
+
+.scroll-images3 .partenaire {
+  margin : 0px 15px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.scroll-images3 .partenaire img{
+  width: 170px;
+  height: 170px; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+.scroll-images3 .partenaire p{
+  color : var(--green);
+  text-size : 32px;
+  font-weight : 700;
+  line-height: 48px; 
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+
+  .hero-section{
+    padding-top : 30%
+}
+
+  .hero-section h1 {
+    font-size : 30px;
+
+}
+
+.hero-section p {
+  font-size : 20px;
+}
+
+.hero-section button {
+  font-size : 20px;
+  padding : 1.5% 2.5%;
+  border-radius : 15px;
+}
+
+.ticker-title{
+  text-align : center;
+  font-size: 20px;
+  padding-top : 30px;
+  width : 23%;
+
+} 
+
+.ticker-wrap {
+
+    width: calc(97.5% - 23%);
+    float : right;
+    overflow: hidden;
+    height: 4rem;
+    background-color: var(--bgGreen);
+    box-sizing: content-box;
+    margin-bottom : 50px;
+    border : 1px solid var(--green);
+    padding : 10px 0
+  }
+
+
+  .pagination { 
+    margin-bottom : 10px;
+    padding : 0 0px
+  
+  }
+  
+    .pagination-btn{
+      font-size : 15px;
+      margin: 0 10px;
+      padding : 1px 10px;
+      margin-top : 0px 
+  }
+  .pagination a {
+    font-size : 20px;
+  }
+  .pagination h1 {
+    font-size : 25px;
+    margin-left : 15px;
+  }
+
+  .child2 {
+    min-width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin: 0px 40px 70px 0px;
+  }
+
+
+  .child2 img {
+    width: 50%;
+    height : 100%;
+    margin-right : 30px ;
+    border-radius : 5px
+  }
+  .child2 a {
+    color : var(--green);
+    margin-top : 10px 
+  }
+
+  .child2 h5{
+    text-size : 25px;
+    line-height: 28px; 
+    margin-top : 10px
+  }
+  .child2 p {
+    font-size : 15px;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.50);
+  } 
+  
+  
+  
+  
+.scroll-images3 {
+  margin : 30px 10px 50px 10px;
+  padding : 20px 30px;
+  border-radius : 15px;
+
+}
+.scroll-images3 .partenaire {
+  margin : 0px 0px
+}
+
+.scroll-images3 .partenaire img{
+  width: 70px;
+  height: 70px; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+.scroll-images3 .partenaire h2{
+  text-size : 20px;
+  font-weight : 700;
+  line-height: 48px; 
+}
+
+
+.child3 {
+  min-width: 50%;
+}
+
+  
+}

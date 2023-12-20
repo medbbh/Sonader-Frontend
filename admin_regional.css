@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+
+:root {
+    --green: #119706;
+    --bgGreen : #ECFFE3;
+    --lightGreen : : #119706
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrap-padding {
+  padding: 10px 50px;
+}
+
+.navbar {
+  box-shadow: 0px 0px 6px 0px grey;
+  margin-bottom : 2%
+}
+
+.navbar-text {
+  font-size: 11px;
+}
+
+.navbar-brand {
+  max-width : 100px
+}
+
+.navbar-brand img {
+  max-width: 5vw; 
+  display: block;
+  width: 100%;
+}
+
+
+.hero_section h1 {
+  color: var(--green);
+  font-size: 60px;
+}
+
+.hero_section h5 {
+  color: grey;
+}
+
+.hero_section .hero-nav {
+  margin-left: 100px;
+}
+.hero_section .hero-nav h5 {
+  border-bottom: solid 5px black;
+  margin: 20px;
+  width: 300px;
+}
+
+.horizontal-scrollable > div {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-scrollable > div > .col-xs-4 {
+  display: inline-block;
+  float: none;
+  text-decoration: none;
+  color: grey;
+  margin: 0px 70px;
+  border-bottom: solid 5px grey;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.horizontal-scrollable > div > .active {
+  color: var(--green);
+  border-bottom: solid 5px var(--green);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.horizontal-scrollable > div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.horizontal-scrollable > div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hero_section img {
+  margin: 50px 0px 30px 100px;
+  width: 75%;
+  height: 70%;
+}
+
+.sub_title {
+  color: var(--green);
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+.section_title {
+  /* margin-left : 100px; */
+  margin-bottom: 50px;
+}
+.section_title p {
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: 5px;
+}
+
+ul li {
+  list-style: disc;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.list-link,
+.list-link:hover {
+  color: var(--green);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.link-icon {
+  color: var(--green);
+}
+
+footer {
+  background-color: var(--green);
+}
+footer div {
+  margin: 20px 0px;
+}
+
+.carte_rim {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.link_chema,
+.link_chema:hover {
+  margin: 10% -1%;
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.cartographie h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  margin-top : 30px
+}
+
+/* ballon 1 */
+.balls-number:nth-of-type(1) {
+    position: absolute;
+    top : 148%;
+    left : 29.5%;
+    background-color : var(--green);
+    width : 16px;
+    height : 16px;
+    padding : 3px 16px 24px 11px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+}
+
+/* ballon 2 */
+.balls-number:nth-of-type(2) {
+    position: absolute;
+    top : 160%;
+    left : 28.5%;
+    background-color : var(--green);
+    width : 16px;
+    height : 16px;
+    padding : 4px 18px 25px 10px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+}
+
+/* ballon 3 */
+.balls-number:nth-of-type(3) {
+    position: absolute;
+    top : 160.5%;
+    left : 36.5%;
+    background-color : var(--green);
+    width : 16px;
+    height : 16px;
+    padding : 4px 19px 25px 10px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+}
+
+/* ballon 4 */
+.balls-number:nth-of-type(4) {
+    position: absolute;
+    top : 169%;
+    left : 41%;
+    background-color : var(--green);
+    width : 16px;
+    height : 16px;
+    padding : 4px 19px 25px 10px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+}
+
+
+/* ballon 5 */
+.balls-number:nth-of-type(5) {
+    position: absolute;
+    top : 169%;
+    left : 48%;
+    background-color : var(--green);
+    width : 16px;
+    height : 16px;
+    padding : 4px 19px 25px 10px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+}
+
+
+
+
+.custom-card{
+    padding : 10px;
+    border-radius : 10px;
+    background-color : var(--bgGreen);
+    max-width: 600px;
+    border : 1px solid var(--green);
+    margin : 7% 0% 0% 0%
+
+}
+
+.custom-card p {
+    font-size : 16px;
+}
+
+
+
+.custom-list ul li {
+    list-style : none;
+    font-weight: 600;
+    margin-bottom: 2.5%;
+    font-size: 15px;
+    padding-left : 10px
+}
+
+.custom-card h5 span {
+    background-color : var(--green);
+    width : 10px;
+    height : 10px;
+    padding : 5px 12px 5px 12px;
+    border-radius :50%;
+    font-size :15px;
+    color : white;
+    font-weight : 800;
+    margin-right : 3%; 
+}
+
+.modal-title {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.modal-body img {
+  max-width: 300px;
+  float: left;
+  margin-right: 2%;
+}
+
+.modal-header button {
+  color: var(--green);
+  border: 3px var(--green) solid;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.text-box h4 {
+  width: 100%;
+  color: var(--green);
+  font-weight: 500;
+}
+/* .text-box p, */
+.text-box ul li {
+  font-size: 15px;
+}
+
+.experience h4 {
+  color: var(--green);
+  font-weight: 600;
+}
+.text-box p {
+  font-size: 18px;
+}
+
+.experience ul li {
+  list-style : none;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.experience li p {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+}
+
+.experience ul li span {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+  .hero_section img {
+    margin: 50px 0px 30px 30px;
+    width: 90%;
+    height: 40%;
+  }
+
+  .hero_section h1 {
+    font-size: 30px;
+  }
+
+  .horizontal-scrollable > div > .col-xs-4 {
+    margin: 15px 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+
+.custom-card{
+    padding : 5px;
+    max-width: 100%;
+
+}
+
+.custom-card h5 {
+    font-size : 15px
+}
+
+.custom-card p {
+    font-size : 13px;
+}
+.custom-list ul li {
+    font-size: 12px;
+    margin-bottom : 5%
+}
+
+.custom-card h5 span {
+    width : 5px;
+    height : 5px;
+    padding : 3px 10px 2px 10px;
+    font-size :13px;
+}
+
+
+.text-box h4 {
+  font-size: 20px;
+}
+
+.text-box p {
+  font-size: 14px;
+}
+
+ul li {
+  font-size: 15px;
+}
+
+}
