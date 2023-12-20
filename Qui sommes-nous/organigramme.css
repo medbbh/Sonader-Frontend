@@ -6,6 +6,9 @@
 body {
   font-family: Poppins;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap-padding {
@@ -78,6 +81,7 @@ ul li {
 
 footer {
   background-color: var(--green);
+  margin-top: auto;
 }
 footer div {
   margin: 20px 0px;
