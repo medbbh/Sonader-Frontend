@@ -268,8 +268,10 @@ footer div {
     margin-right : 3%; 
 }
 
-.modal-title {
-  color: var(--green);
+.modal {
+  word-wrap: break-word;
+}
+.modal-title {  color: var(--green);
   font-weight: 600;
 }
 

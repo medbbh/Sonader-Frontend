@@ -42,8 +42,10 @@ footer {
 
 /* modal */
 
-.modal-title {
-  color: var(--green);
+.modal {
+  word-wrap: break-word;
+}
+.modal-title {  color: var(--green);
   font-weight: 600;
 }
 .modal-title span{
