@@ -28,7 +28,8 @@
     <!-- nav bar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid ">
-            <a href="index.html" class="navbar-brand"><img src="images/sonader_logo-removebg-preview.png" alt="logo"></a>
+            <a href="index.html" class="navbar-brand"><img src="images/sonader_logo-removebg-preview.png"
+                    alt="logo"></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -159,7 +160,7 @@
                 <img class="card-img-top" src="images/logo-social-removebg-preview.png" alt="Card image cap">
                 <div class="card-body">
                     <a><u>Titre Projet</u></a>
-                    <p class="card-text mt-2 text-black-50">Some quick example text to build on the card title and make.
+                    <p class="card-text mt-2 text-black-50 para">Some quick example text to build on the card title and make.Some quick example text to build on the card title and make.Some quick example text to build on the card title and make.
                     </p>
                 </div>
             </div>
@@ -171,12 +172,23 @@
 
     </div>
 
+    <script >
+        var para = document.getElementsByClassName("para")[0]
+        var text = para.innerHTML
+        para.innerHTML = ""
+        var words = text.split(" ")
+        for(i =0;i<20;i++){
+            para.innerHTML +=words[i] + " "
+
+        }
+        para.innerHTML += "..."
+    </script>
 
 
 
 
 
-
+    <!-- modal -->
     <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -198,29 +210,35 @@
                                 iusto architecto.
                             </p>
                             <div class="row">
-                            <h6>Lorem, ipsum dolor sit amet consectetur </h5>
+                                <h6>Lorem, ipsum dolor sit amet consectetur </h5>
 
-                                <p class="col-lg-6 col-sm-12" style="word-spacing: 13px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
-                                neque porro nobis,
-                                animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
-                                iusto architecto.
-                            </p>
-                            <img src="images/laptop_on_desk.jpg" style="border-radius: 13px;" alt="photo de directeur" class="col-lg-6 col-sm-12">
+                                    <p class="col-lg-6 col-sm-12" style="word-spacing: 13px;">Lorem, ipsum dolor sit
+                                        amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                        neque porro nobis,
+                                        animi laborum expedita voluptate fuga veniam sequi consequatur assumenda
+                                        obcaecati,
+                                        iusto architecto.
+                                    </p>
+                                    <img src="images/laptop_on_desk.jpg" style="border-radius: 13px;"
+                                        alt="photo de directeur" class="col-lg-6 col-sm-12">
                             </div>
 
                             <div class="row">
                                 <h6 style="float: right;">Lorem, ipsum dolor sit amet consectetur </h5>
 
-                                    <img src="images/laptop_on_desk.jpg" style="float: left;border-radius: 13px;" alt="photo de directeur" class="col-lg-6 col-sm-12">
-    
-                                    <p class="col-lg-6 col-sm-12" style="float: right;word-spacing: 13px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
-                                    neque porro nobis,
-                                    animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
-                                    iusto architecto.
-                                </p>
+                                    <img src="images/laptop_on_desk.jpg" style="float: left;border-radius: 13px;"
+                                        alt="photo de directeur" class="col-lg-6 col-sm-12">
 
-                                </div>
-                            
+                                    <p class="col-lg-6 col-sm-12" style="float: right;word-spacing: 13px;">Lorem, ipsum
+                                        dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                        neque porro nobis,
+                                        animi laborum expedita voluptate fuga veniam sequi consequatur assumenda
+                                        obcaecati,
+                                        iusto architecto.
+                                    </p>
+
+                            </div>
+
                         </div>
                     </div>
 

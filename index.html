@@ -84,7 +84,8 @@
 
         <h1>THE NATIONAL COMPANY FOR RURAL DEVELOPMENT “SONADER”</h1>
         <p>Long experience in irrigated agriculture</p>
-        <button><a href="Qui sommes-nous/presentation.html" style="text-decoration: none; color: inherit;">Apprendre encore plus</a></button>
+        <button><a href="Qui sommes-nous/presentation.html" style="text-decoration: none; color: inherit;">Apprendre
+                encore plus</a></button>
     </div>
 
 
@@ -126,7 +127,7 @@
 
     <div class="cover">
         <div class="scroll-images">
-            <div class="card child">
+            <div class="card child" data-bs-toggle="modal" data-bs-target="#nouvelles">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h1>Lorem ipsum dolor, sit amet consectetur </h1>
@@ -193,11 +194,11 @@
     <div class="cover">
         <div class="scroll-images2">
 
-            <div class="card child2 " style="width: 18rem;">
+            <div class="card child2 " style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#Appels_offres">
                 <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <a href="#">New</a>
-                    <h5 class="card-title">Titre d’apple</h5>
+                    <h5 class="card-title">Titre d’appel</h5>
 
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -209,7 +210,7 @@
                 <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
 
-                    <h5 class="card-title">Titre d’apple</h5>
+                    <h5 class="card-title">Titre d’appel</h5>
 
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -220,7 +221,7 @@
                 <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
 
-                    <h5 class="card-title">Titre d’apple</h5>
+                    <h5 class="card-title">Titre d’appel</h5>
 
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -231,7 +232,7 @@
                 <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
 
-                    <h5 class="card-title">Titre d’apple</h5>
+                    <h5 class="card-title">Titre d’appel</h5>
 
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -242,17 +243,12 @@
                 <img src="images/laptop_on_desk.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
 
-                    <h5 class="card-title">Titre d’apple</h5>
+                    <h5 class="card-title">Titre d’appel</h5>
 
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-
-
-
-
-
         </div>
     </div>
 
@@ -314,60 +310,123 @@
 
 
 
-<!-- Third horizontal scrollable cards -->
-<div class="pagination justify-content-between">
-    <h1>Nos Partenaires</h1>
-    <div>
-        <button class="pagination-btn left3" onclick="leftScroll3()"><i class="fa-solid fa-less-than"></i></button>
-        <button class="pagination-btn right3" onclick="rightScroll3()"><i
-                class="fa-solid fa-greater-than"></i></button>
-        <a href="#">Voir plus</a>
+    <!-- Third horizontal scrollable cards -->
+    <div class="pagination justify-content-between">
+        <h1>Nos Partenaires</h1>
+        <div>
+            <button class="pagination-btn left3" onclick="leftScroll3()"><i class="fa-solid fa-less-than"></i></button>
+            <button class="pagination-btn right3" onclick="rightScroll3()"><i
+                    class="fa-solid fa-greater-than"></i></button>
+            <a href="#">Voir plus</a>
+        </div>
+
+    </div>
+    <div class="cover">
+        <div class="scroll-images3">
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+            <div class="d-block partenaire child3">
+                <img src="images/sonader_logo.jpeg" alt="">
+                <p>Partenaire 1</p>
+            </div>
+
+
+        </div>
     </div>
 
-</div>
-<div class="cover">
-    <div class="scroll-images3">
 
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
+
+    <!-- modal Appels d'offres-->
+    <div class="modal fade bd-example-modal-lg" id="Appels_offres" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header" style="border: none;">
+                    <h1 class="modal-title" id="exampleModalLabel1">Projet <span>Le 31-12-2022</span></h1>
+                    <button type="button" class="close rounded-circle" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <i aria-hidden="true" class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="directeur_intro">
+                        <img src="images/laptop_on_desk.jpg" alt="photo de directeur" class="rounded-1 w-100">
+                        <div class="text-box">
+                            <h2 class="mb-3">Lorem, ipsum dolor sit amet consectetur </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                neque porro nobis,
+                                animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
+                                iusto architecto.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                neque porro nobis,
+                                animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
+                                iusto architecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        <div class="d-block partenaire child3">
-            <img src="images/sonader_logo.jpeg" alt="" >
-            <p>Partenaire 1</p>
-        </div>
-
-        
     </div>
-</div>
 
 
+    <!-- modal nouvelles -->
+    <div class="modal fade bd-example-modal-lg" id="nouvelles" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header" style="border: none;">
+                    <h1 class="modal-title" id="exampleModalLabel">Projet <span>Le 31-12-2022</span></h1>
+                    <button type="button" class="close rounded-circle" data-bs-dismiss="modal" aria-bs-label="Close">
+                        <i aria-hidden="true" class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="directeur_intro">
+                        <img src="images/laptop_on_desk.jpg" alt="photo de directeur" class="rounded-1 w-100">
+                        <div class="text-box">
+                            <h2 class="mb-3">Lorem, ipsum dolor sit amet consectetur </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus deserunt est at,
+                                neque porro nobis,
+                                animi laborum expedita voluptate fuga veniam sequi consequatur assumenda obcaecati,
+                                iusto architecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
