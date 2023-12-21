@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-text {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .navbar-brand {
@@ -32,6 +32,9 @@ body {
   max-width: 5vw; 
   display: block;
   width: 100%;
+}
+.dropdown-menu a:hover{
+  background-color : var(--bgGreen)
 }
 
 .hero_section h1 {
