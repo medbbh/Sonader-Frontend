@@ -176,10 +176,8 @@
         var para = document.getElementsByClassName("para")[0]
         var text = para.innerHTML
         para.innerHTML = ""
-        var words = text.split(" ")
-        for(i =0;i<20;i++){
-            para.innerHTML +=words[i] + " "
-
+        for(i =0;i<105;i++){
+            para.innerHTML +=text[i]
         }
         para.innerHTML += "..."
     </script>
