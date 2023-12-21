@@ -122,8 +122,14 @@ footer div {
 
 /* modal */
 
-.modal-title {
-    color: var(--green);
+.modal {
+  word-wrap: break-word;
+}
+
+.modal {
+  word-wrap: break-word;
+}
+.modal-title {    color: var(--green);
     font-weight: 600;
   }
   .modal-title span{
@@ -166,7 +172,6 @@ footer div {
     color: var(--green);
     font-weight: 600;
     float : right;
-    word-wrap: break-word;
 
   }
   .text-box row p:nth-of-type(2){
@@ -174,7 +179,6 @@ footer div {
     font-weight: 500;
     float : right;
     word-spacing: 10px;
-    word-wrap: break-word;
   }
 
   .text-box row p{
@@ -182,7 +186,6 @@ footer div {
     font-weight: 500;
     float : left;
     word-spacing: 10px;
-    word-wrap: break-word;
   }
 
   .modal-body img:nth-of-type(2) {
