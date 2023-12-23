@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
+
+
+
 
 :root {
     --green: #119706;
@@ -9,6 +12,17 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+[dir=rtl] {
+  body {
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+  }
+  .navbar-text {
+    font-size : 18px;
+    margin : 0 50px;
+  }
+}
+
+
 
 .wrap-padding {
   padding: 10px 50px;

@@ -35,34 +35,33 @@
             </button>
             <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
                 <div class="navbar-nav navbar-text fw-semibold">
-                    <a href="index.html" class="nav-item nav-link">Acceuil</a>
-                    <a href="#" class="nav-item nav-link" style="color: #119706;">Programmes de projets</a>
+                    <a href="index.html" class="nav-item nav-link"  data-i18n="home">Acceuil</a>
+                    <a href="#" class="nav-item nav-link" style="color: #119706;" data-i18n="project_program">Programmes de projets</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="evaluation_and_follow_up">Évolutions et suivi</a>
                         <div class="dropdown-menu">
-                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item">Cartographie</a>
-                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item">Statistiques</a>
+                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item" data-i18n="cartography">Cartographie</a>
+                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item" data-i18n="statistics">Statistiques</a>
                         </div>
                     </div>
-                    <a href="admin_regional.html" class="nav-item nav-link">Administrations régionales</a>
+                    <a href="admin_regional.html" class="nav-item nav-link" data-i18n="Admin_regional">Administrations régionales</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="about_us">Qui sommes-nous</a>
                         <div class="dropdown-menu">
-                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item">Organigramme</a>
-                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item">Presentation</a>
+                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item" data-i18n="organigramme">Organigramme</a>
+                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item" data-i18n="presentation">Presentation</a>
                         </div>
                     </div>
-                    <a href="contacter-nous.html" class="nav-item nav-link">Contactez-nous</a>
+                    <a href="contacter-nous.html" class="nav-item nav-link" data-i18n="contact_us">Contactez-nous</a>
 
 
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Langues</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Français</a>
-                            <a href="#" class="dropdown-item">Arabe</a>
-                            <a href="#" class="dropdown-item">Anglais</a>
-                        </div>
-                    </div>
+                    <select style="border: none;">
+                        <option href="#" value="fr" selected data-i="language">Langues</option>
+                        <option href="#" value="fr" data-i18n="fr">Français</option>
+                        <option href="#" value="ar" data-i18n="ar">Arabe</option>
+                        <option href="#" value="en" data-i18n="en">Anglais</option>
+                    </select>
+                    
                 </div>
                 <form class="d-flex">
                     <div class="input-group border mt-2">
@@ -181,8 +180,6 @@
 
 
 
-
-
     <!-- modal -->
     <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -261,6 +258,8 @@
     <!-- js links -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+
+    <script src="lang.js" type="module"></script>
 </body>
 
 </html>

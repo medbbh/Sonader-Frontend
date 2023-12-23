@@ -12,7 +12,6 @@
         rel="stylesheet">
 
 
-
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- font awesome -->
@@ -32,42 +31,51 @@
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+            <div class="navbar-collapse justify-content-around collapse" id="navbarCollapse">
                 <div class="navbar-nav navbar-text fw-semibold">
-                    <a href="index.html" class="nav-item nav-link">Acceuil</a>
-                    <a href="project_page.html" class="nav-item nav-link">Programmes de projets</a>
+                    <a href="index.html" class="nav-item nav-link" data-i18n="home">Acceuil</a>
+                    <a href="project_page.html" class="nav-item nav-link" data-i18n="project_program">Programmes de projets</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Évolutions et suivi</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="evaluation_and_follow_up">Évolutions et suivi</a>
                         <div class="dropdown-menu">
-                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item">Cartographie</a>
-                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item">Statistiques</a>
+                            <a href="evaluation et suivi/cartographie.html" class="dropdown-item" data-i18n="cartography">Cartographie</a>
+                            <a href="evaluation et suivi/statistiques.html" class="dropdown-item" data-i18n="statistics">Statistiques</a>
                         </div>
                     </div>
-                    <a href="admin_regional.html" class="nav-item nav-link">Administrations régionales</a>
+                    <a href="admin_regional.html" class="nav-item nav-link" data-i18n="Admin_regional">Administrations régionales</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="about_us">Qui sommes-nous</a>
                         <div class="dropdown-menu">
-                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item">Organigramme</a>
-                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item">Presentation</a>
+                            <a href="Qui sommes-nous/organigramme.html" class="dropdown-item" data-i18n="organigramme">Organigramme</a>
+                            <a href="Qui sommes-nous/presentation.html" class="dropdown-item" data-i18n="presentation">Presentation</a>
                         </div>
                     </div>
-                    <a href="#" class="nav-item nav-link" style="color: #119706;">Contactez-nous</a>
+                    <a href="#" class="nav-item nav-link" style="color: #119706;" data-i18n="contact_us">Contactez-nous</a>
 
 
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Langues</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Français</a>
-                            <a href="#" class="dropdown-item">Arabe</a>
-                            <a href="#" class="dropdown-item">Anglais</a>
-                        </div>
-                    </div>
+                    <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="language">Langues</a>
+                        <select class="dropdown-menu" id="language_select">
+                            <option href="#" class="dropdown-item" value="fr" data-i18n="fr">Français</option>
+                            <option href="#" class="dropdown-item" value="ar"  data-i18n="ar">Arabe</option>
+                            <optio href="#" class="dropdown-item"value="en"  data-i18n="en">Anglais</optio>
+                        </select>
+                    </div> -->
+
+                    <select style="border: none;">
+                        <option href="#" value="fr" data-i18n="fr">Français</option>
+                        <option href="#" value="ar" data-i18n="ar">Arabe</option>
+                        <option href="#" value="en" data-i18n="en">Anglais</option>
+                    </select>
+
+                    
+
                 </div>
                 <form class="d-flex">
                     <div class="input-group border mt-2">
 
                         <input class="form-control border-0" id="search" type="text" placeholder="Search in site" />
-                        <div class="input-group-addon mt-2 px-1">
+                        <div class="input-group-addon mt-2">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
 
@@ -81,7 +89,7 @@
 
     <!-- <div class="wrap-padding"> -->
 
-        <h1 class="title">Contactez-nous</h1>
+        <h1 class="title" data-i18n="contact_us">Contactez-nous</h1>
 
 
         
@@ -89,7 +97,7 @@
 
     <div class="contact-section">
 
-        <h1>Vous pouvez nous contacter via</h1>
+        <h1  data-i18n="you_can_contact_us_on">Vous pouvez nous contacter via</h1>
         <div class="row gap-3">
             <a class="col-lg-6" target="_blank" rel="noopener" href="https://www.facebook.com/sonader.mauritanie/"><i class="fa-brands fa-square-facebook"></i><span>Sonader</span></a>
             <a class="col-lg-6"><i class="fa-solid fa-phone"></i><span>+ (222) 45 24 29 99</span></a><br>
@@ -101,7 +109,7 @@
 
     </div>
 
-    <h1 class="ou-bien"><span>Ou bien</span></h1>
+    <h1 class="ou-bien"  data-i18n="or"><span>Ou bien</span></h1>
 
 
 
@@ -142,6 +150,9 @@
     <!-- js links -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+
+
+    <script src="lang.js" type="module"></script>
 </body>
 
 </html>
