@@ -12,6 +12,18 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 1666px) {
+  body{
+    display: grid;
+  }
+  .main-container-le-gr1{
+  max-width : 1366px;
+    display:grid;
+    justify-content : center;
+    justify-self: center;
+  }
+
+}
 [dir=rtl] {
   body {
     font-family: 'Baloo Bhaijaan 2', sans-serif;
@@ -315,6 +327,10 @@ footer div {
 
 
 
+.carte_rim {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /* ballon 1 */
 .balls-number:nth-of-type(1) {
@@ -417,8 +433,10 @@ footer div {
 
 @media only screen and (max-width :480px){
 
-
- 
+  /* .carte-container
+ {
+  position : relative
+ } */
 /* ballon 1 */
 .balls-number:nth-of-type(1) {
   top : 72.5%;

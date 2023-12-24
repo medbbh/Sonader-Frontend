@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
 [dir=rtl] {
   body {
     font-family: 'Baloo Bhaijaan 2', sans-serif;
@@ -20,8 +21,9 @@ body {
     font-size : 18px;
     margin : 0 50px;
   }
-
+  
 }
+
 
 
 
@@ -104,7 +106,7 @@ margin-bottom : 55px
 
 /* ou bien between a line  */
 
-.ou-bien {
+.ou-bien ,.ou-bien-ar{
     overflow: hidden;
     text-align: center;
     margin : 10% 0;
@@ -112,9 +114,10 @@ margin-bottom : 55px
     color : var(--green);
     font-weight : 600
   }
+
   
   .ou-bien::before,
-  .ou-bien::after {
+  .ou-bien::after ,.ou-bien-ar::before,.ou-bien-ar::after{
     background-color: #000;
     content: "";
     display: inline-block;
@@ -132,10 +135,35 @@ margin-bottom : 55px
   .ou-bien::after {
     left: 0.5em;
     margin-right: -48%;
+  } 
+
+  .ou-bien-ar::before {
+    left: 0.5em; /* Change 'right' to 'left' */
+    margin-right: -48%; /* Change 'margin-left' to 'margin-right' */
+  }
+  
+  .ou-bien-ar::after {
+    right: 0.5em; /* Change 'left' to 'right' */
+    margin-left: -48%; /* Change 'margin-right' to 'margin-left' */
   }
 
 
+.cv{
+  display: flex;
+  width: 100dvw;
+  justify-content: space-between;
+}
+.cv span{
+  min-width: 90px;
+  text-align: 'center';
+  font-size: 30px;
+  color: var(--green)
+}
 
+.cv hr{
+  width: 100%;
+  height: 20px;
+}
 
 .contact-form {
     display: inline-block;

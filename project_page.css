@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
 [dir=rtl] {
   body {
     font-family: 'Baloo Bhaijaan 2', sans-serif;

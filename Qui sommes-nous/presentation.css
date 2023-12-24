@@ -12,6 +12,18 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 1666px) {
+  body{
+    display: grid;
+  }
+  .main-container-le-gr1{
+  max-width : 1366px;
+    display:grid;
+    justify-content : center;
+    justify-self: center;
+  }
+
+}
 [dir=rtl] {
   body {
     font-family: 'Baloo Bhaijaan 2', sans-serif;
@@ -22,9 +34,6 @@ body {
   }
 }
 
-  font-family: Poppins;
-  overflow-x: hidden;
-}
 
 .wrap-padding {
   padding: 10px 50px;
