@@ -12,11 +12,21 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 1666px) {
+  body{
+    display: grid;
+  }
+  .main-container-le-gr1{
+  max-width : 1366px;
+    display:grid;
+    justify-content : center;
+    justify-self: center;
+  }
+
+}
 
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;
@@ -24,12 +34,6 @@ body {
 
 }
 
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
 .wrap-padding {
   padding: 10px 50px;
@@ -130,6 +134,7 @@ footer div {
 
 .custom-card img {
     border-radius: 5px;
+    object-fit: contain;
     /* width:140px; */
     height:160px;
 }
@@ -138,12 +143,7 @@ footer div {
   overflow-x: hidden;
 }
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
-}
 
-    color: var(--green);
 }
 
 
@@ -168,8 +168,8 @@ footer div {
   
   .modal-body img {
     max-width: 100%;
-    max-height : 300px;
-    /* margin-right: 2%; */
+    max-height : 100%;
+    object-fit: contain;
     margin-bottom : 15px 
 
   }
@@ -219,10 +219,12 @@ footer div {
 
     float:right;
     border-radius : 15px;
+    object-fit: contain;
 
   }
   .modal-body img:nth-of-type(3) {
 
+    object-fit: contain;
     float:left;
 
   }
@@ -272,9 +274,7 @@ footer div {
   overflow-x: hidden;
 }
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
 }
 
         color: var(--green);

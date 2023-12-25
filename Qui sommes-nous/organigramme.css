@@ -11,21 +11,25 @@ body {
   overflow-x: hidden;
 }
 
-[dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
+@media only screen and (min-width: 1666px) {
+  body{
+    display: grid;
   }
+  .main-container-le-gr1{
+  max-width : 1366px;
+    display:grid;
+    justify-content : center;
+    justify-self: center;
+  }
+
+}
+
+[dir=rtl] {
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;
   }
-}
-
-  font-family: Poppins;
-  overflow-x: hidden;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .wrap-padding {
@@ -49,6 +53,7 @@ body {
   max-width: 5vw; 
   display: block;
   width: 100%;
+  
 }
 .dropdown-menu a:hover{
   background-color : var(--bgGreen)
@@ -130,6 +135,7 @@ footer div {
   max-width: 300px;
   float: left;
   margin-right: 2%;
+  object-fit: contain;
 }
 
 .modal-header button {

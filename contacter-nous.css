@@ -12,11 +12,21 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 1666px) {
+  body{
+    display: grid;
+  }
+  .main-container-le-gr1{
+  max-width : 1366px;
+    display:grid;
+    justify-content : center;
+    justify-self: center;
+  }
+
+}
 
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;

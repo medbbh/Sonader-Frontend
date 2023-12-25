@@ -25,9 +25,7 @@ body {
 
 }
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;
@@ -122,6 +120,7 @@ body {
 .hero_section img {
   max-width: 25%;
   float: right;
+  object-fit: contain;
 }
 
 /* .text-box{
@@ -180,7 +179,8 @@ footer div {
   .hero_section img {
     max-width: 80%;
     float: right;
-    margin : 20px 
+    margin : 20px ;
+    object-fit: contain;
   }
 
   .text-box p {

@@ -13,20 +13,15 @@ body {
   overflow-x: hidden;
 }
 
+
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;
   }
 }
 
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  
-}
 
 .wrap-padding {
   padding: 10px 50px;
@@ -49,6 +44,7 @@ body {
   max-width: 5vw; 
   display: block;
   width: 100%;
+  object-fit: contain;
 }
 .dropdown-menu a:hover{
   background-color : var(--bgGreen)
@@ -106,8 +102,9 @@ body {
 
 .hero_section img {
   margin: 50px 0px 30px 100px;
-  width: 75%;
-  height: 70%;
+  width: 100%;
+  height:100%;
+  object-fit: contain;
 }
 
 .sub_title {
@@ -140,13 +137,6 @@ ul li {
 
 .link-icon {
   color: var(--green);
-}
-
-footer {
-  background-color: var(--green);
-}
-footer div {
-  margin: 20px 0px;
 }
 
 .carte_rim {
@@ -293,9 +283,12 @@ footer div {
 }
 
 .modal-body img {
-  max-width: 300px;
+  /* max-width: 300px; */
   float: left;
   margin-right: 2%;
+  width: 100%;
+  height : 100%;
+  object-fit: contain;
 }
 
 .modal-header button {
@@ -350,6 +343,7 @@ footer div {
     margin: 50px 0px 30px 30px;
     width: 90%;
     height: 40%;
+    object-fit: contain;
   }
 
   .hero_section h1 {

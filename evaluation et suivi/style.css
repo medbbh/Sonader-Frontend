@@ -25,9 +25,7 @@ body {
 
 }
 [dir=rtl] {
-  body {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-  }
+
   .navbar-text {
     font-size : 18px;
     margin : 0 50px;
