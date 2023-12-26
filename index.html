@@ -142,49 +142,49 @@
             <div class="card child" data-bs-toggle="modal" data-bs-target="#nouvelles">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
             <div class="card child">
                 <img class="card-img-top" src="images/laptop_on_desk.jpg" alt="Card image cap">
                 <div class="card-body" data-i18n="test_desc">
-                    <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+                    <h1 class="para">Lorem ipsum dolor, sit amet consectetur </h1>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
                     <a href="#">New</a>
                     <h5 class="card-title" data-i18n="appel_offres_card_title">Titre d’appel</h5>
 
-                    <p class="card-text" data-i18n="test_desc">Some quick example text to build on the card title and
+                    <p class="card-text para" data-i18n="test_desc">Some quick example text to build on the card title and
                         make up the bulk of the
                         card's content.</p>
                 </div>
@@ -225,7 +225,7 @@
 
                     <h5 class="card-title">Titre d’appel</h5>
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text para">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
@@ -236,7 +236,7 @@
 
                     <h5 class="card-title">Titre d’appel</h5>
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text para">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
@@ -247,7 +247,7 @@
 
                     <h5 class="card-title">Titre d’appel</h5>
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text para">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
@@ -258,7 +258,16 @@
 
                     <h5 class="card-title">Titre d’appel</h5>
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text para">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
@@ -443,6 +452,16 @@
 
 
 
+
+    <script >
+        var para = document.getElementsByClassName("para")[0]
+        var text = para.innerHTML
+        para.innerHTML = ""
+        for(i =0;i<105;i++){
+            para.innerHTML +=text[i]
+        }
+        para.innerHTML += "..."
+    </script>
 
 
 

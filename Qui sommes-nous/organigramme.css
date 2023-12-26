@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
 
-
+@font-face{
+  font-family: "Al-Jazeera-Arabic-Bold";
+  src: url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.eot");
+  src: url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.svg#Al-Jazeera-Arabic-Bold")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
 
 
 :root {
@@ -9,6 +20,13 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+}
+[dir=rtl]{
+  body{
+    font-family: Al-Jazeera-Arabic-Bold;
+  }
+
+
 }
 
 @media only screen and (min-width: 1666px) {
