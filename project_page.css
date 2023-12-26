@@ -40,6 +40,13 @@ body {
     font-family: Al-Jazeera-Arabic-Bold;
   }
 
+  .pagination .pagination-btn:nth-of-type(1){
+    transform: rotate(180deg)
+  }
+  .pagination .pagination-btn:nth-of-type(2){
+    transform: rotate(-180deg)
+  }
+
 
 }
 
@@ -49,9 +56,12 @@ body {
     font-size : 18px;
     margin : 0 50px;
   }
-
+  
 }
 
+[dir=rtl] {
+  
+}
 
 .wrap-padding {
   padding: 10px 50px;
