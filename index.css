@@ -137,6 +137,24 @@ footer {
     background-color : white
 }
 
+select {
+  color : var(--green)
+}
+
+select option:checked {
+  background-color: var(--green);
+}
+select option {
+  color : black
+}
+
+select option:checked {
+  background-color: var(--bgGreen);
+}
+select option {
+  color : black
+}
+
 [dir=rtl] {
   .navbar-text {
     font-size : 18px;
@@ -156,28 +174,6 @@ footer {
 
   }
 
-  @-webkit-keyframes ticker {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-    100% {
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
-  @keyframes ticker {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-    100% {
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-    }
-  }
 
 }
 
@@ -216,7 +212,7 @@ footer {
     height: 4rem;
     line-height: 4rem;
     white-space: nowrap;
-    padding-left: 100%; 
+    padding-left: 10%; 
     font-size: 32px;
     box-sizing: content-box;
     -webkit-animation-iteration-count: infinite;
@@ -225,8 +221,8 @@ footer {
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 15s;
-    animation-duration: 15s;
+    -webkit-animation-duration: 25s;
+    animation-duration: 25s;
     color: var(--green);
   }
   
@@ -471,13 +467,6 @@ footer {
   font-weight : 700;
   line-height: 48px; 
 }
-
-
-
-
-
-
-
 
 
 

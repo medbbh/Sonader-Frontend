@@ -9,7 +9,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: Object.keys(data),
+        labels:  Object.keys(data).map(key => `${data[key]}% ${key}` ), 
         datasets: [
             {
                 label: 'Number of GitHub Stars',

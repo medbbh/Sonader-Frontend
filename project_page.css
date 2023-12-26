@@ -35,6 +35,17 @@ body {
   }
 
 }
+
+select {
+  color : var(--green)
+}
+
+select option:checked {
+  background-color: var(--bgGreen);
+}
+select option {
+  color : black
+}
 [dir=rtl]{
   body{
     font-family: Al-Jazeera-Arabic-Bold;

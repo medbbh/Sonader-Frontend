@@ -77,6 +77,24 @@ body {
   background-color : var(--bgGreen)
 }
 
+select {
+  color : var(--green)
+}
+
+select option:checked {
+  background-color: var(--bgGreen);
+}
+select option {
+  color : black
+}
+[dir=rtl]{
+  .link_chema {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+
+}
+
 .hero_section h1 {
   color: var(--green);
   font-size: 60px;
@@ -139,6 +157,12 @@ body {
   max-width: 25%;
   float: right;
   object-fit: contain;
+  margin-top : -30px 
+}
+[dir = rtl]{
+  .hero_section img {
+    float: left;
+  }
 }
 
 /* .text-box{

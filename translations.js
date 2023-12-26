@@ -25,6 +25,8 @@ const translations = {
         test_desc : "some random text" ,
         appel_offres : "Calls for tenders",
         appel_offres_card_title : "Appel d'offres",
+        voir_plus : "See more"
+
     },
     fr: {
         home: "Acceuil",
@@ -52,6 +54,7 @@ const translations = {
         test_desc : "Un text pas de sens" ,
         appel_offres : "Appeles d'offres",
         appel_offres_card_title : "Appel d'offre",
+        voir_plus : "Voir plus"
         
     },
 

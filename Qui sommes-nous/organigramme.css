@@ -1,52 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
 
-@font-face{
+@font-face {
   font-family: "Al-Jazeera-Arabic-Bold";
   src: url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.eot");
-  src: url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.eot?#iefix")format("embedded-opentype"),
-      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff")format("woff"),
-      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff2")format("woff2"),
-      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.ttf")format("truetype"),
-      url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.svg#Al-Jazeera-Arabic-Bold")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+  src: url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c42eb56b5b7e3a1238d61dca44501a07.svg#Al-Jazeera-Arabic-Bold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 :root {
   --green: #119706;
+  --bgGreen : #ECFFE3;
 }
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
-[dir=rtl]{
-  body{
+[dir="rtl"] {
+  body {
     font-family: Al-Jazeera-Arabic-Bold;
   }
-
-
 }
 
 @media only screen and (min-width: 1666px) {
-  body{
+  body {
     display: grid;
   }
-  .main-container-le-gr1{
-  max-width : 1366px;
-    display:grid;
-    justify-content : center;
+  .main-container-le-gr1 {
+    max-width: 1366px;
+    display: grid;
+    justify-content: center;
     justify-self: center;
   }
-
 }
 
-[dir=rtl] {
-
+[dir="rtl"] {
   .navbar-text {
-    font-size : 18px;
-    margin : 0 50px;
+    font-size: 18px;
+    margin: 0 50px;
   }
 }
 
@@ -64,17 +68,16 @@ body {
 }
 
 .navbar-brand {
-  max-width : 100px
+  max-width: 100px;
 }
 
 .navbar-brand img {
-  max-width: 5vw; 
+  max-width: 5vw;
   display: block;
   width: 100%;
-  
 }
-.dropdown-menu a:hover{
-  background-color : var(--bgGreen)
+.dropdown-menu a:hover {
+  background-color: var(--bgGreen);
 }
 
 .hero_section h1 {
@@ -82,7 +85,7 @@ body {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 40px;
-  margin-top: 10%
+  margin-top: 10%;
 }
 
 .hero_section p {
@@ -94,10 +97,9 @@ body {
 }
 
 .section_title {
-    margin-left: 5%;
-    margin-bottom: 10px;
-    margin-top: 4%;
-  
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 4%;
 }
 .section_title p {
   font-weight: 400;
@@ -130,7 +132,6 @@ footer div {
   margin: 20px 0px;
 }
 
-
 .link_chema,
 .link_chema:hover {
   margin: 10% -1%;
@@ -138,15 +139,13 @@ footer div {
   text-decoration: none;
   cursor: pointer;
 }
+.modal {
+  word-wrap: break-word;
+}
 
-.modal {
-  word-wrap: break-word;
-}
-.modal-title {  color: var(--green);
+.modal-title {
+  color: var(--green);
   font-weight: 600;
-}
-.modal {
-  word-wrap: break-word;
 }
 
 .modal-body img {
@@ -168,7 +167,6 @@ footer div {
   width: 100%;
   color: var(--green);
   font-weight: 500;
-  
 }
 /* .text-box p, */
 .text-box ul li {
@@ -184,7 +182,7 @@ footer div {
 }
 
 .experience ul li {
-  list-style : none;
+  list-style: none;
   color: var(--green);
   font-weight: 600;
   margin-bottom: 3%;
@@ -202,18 +200,33 @@ footer div {
   margin: 0;
 }
 
+select {
+  color: var(--green);
+}
+
+select option:checked {
+  background-color: var(--bgGreen);
+}
+select option {
+  color: black;
+}
+
+[dir="rtl"] {
+  .link_chema {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+}
 
 /* mobile screen */
 @media only screen and (max-width: 768px) {
-
   .link_chema,
   .link_chema:hover {
     margin: 10% -5%;
     color: var(--green);
     text-decoration: none;
     cursor: pointer;
-}
-
+  }
 
   .hero_section h1 {
     font-size: 30px;

@@ -75,6 +75,17 @@ body {
   width: 100%;
 }
 
+
+.navbar select {
+  color : var(--green)
+}
+
+select option:checked {
+  background-color: var(--bgGreen);
+}
+select option {
+  color : black
+}
 .dropdown-menu a:hover{
   background-color : var(--bgGreen)
 }
@@ -283,6 +294,21 @@ footer div {
   margin : 15% 5% 0% -7%
 }
 
+[dir = rtl]{
+  .statistique .statistique-card div span{
+    float : left
+  }
+  
+
+}
+
+[dir=rtl]{
+  .link_chema {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+
+}
 
 .statistique .custom-table p span{
   float : right;
