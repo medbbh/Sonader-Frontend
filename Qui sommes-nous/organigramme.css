@@ -52,6 +52,11 @@ body {
     font-size: 18px;
     margin: 0 50px;
   }
+  .fa-li {
+    left: auto;
+    right: calc(var(--fa-li-width, 2em) * -1);
+  }
+
 }
 
 .wrap-padding {

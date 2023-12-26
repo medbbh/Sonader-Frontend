@@ -307,6 +307,10 @@ footer div {
     unicode-bidi: bidi-override;
     direction: rtl;
   }
+  .custom-list .fa-li {
+    left: auto;
+    right: calc(var(--fa-li-width, 2em) * -1);
+  }
 
 }
 
@@ -366,8 +370,6 @@ footer div {
     padding : 3px 10px 2px 10px;
     font-size :13px;
 }
-
-
 
 .carte_rim {
   max-width: 100%;

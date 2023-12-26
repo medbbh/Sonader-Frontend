@@ -29,6 +29,11 @@ body {
     font-family: Al-Jazeera-Arabic-Bold;
   }
 
+  .fa-li {
+    left: auto;
+    right: calc(var(--fa-li-width, 2em) * -1);
+  }
+
 
 }
 
