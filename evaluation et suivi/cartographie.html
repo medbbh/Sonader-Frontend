@@ -99,11 +99,17 @@
 
                 <div class="container text-center">
 
-                    <img src="../images/mr_1.svg" class="carte_rim" alt="carte de mauritanie">
+                    <!-- <img src="../images/mr 2.svg" class="carte_rim" alt="carte de mauritanie"> -->
+
+                    <!-- <embed src="../images/mr 2.svg" class="carte_rim" > -->
+                    <object data="../images/mr 2.svg"  class="carte_rim"  id="svgObject"></object>
 
                 </div>
 
-                <div class="balls-number">
+
+
+
+                <!-- <div class="balls-number">
                     <span class=""><a href="#1" onclick="target1()"
                             style="color: inherit;text-decoration: inherit;">1</a></span>
                 </div>
@@ -122,7 +128,7 @@
                 <div class="balls-number">
                     <span class=""><a href="#4" onclick="target5()"
                             style="color: inherit;text-decoration: inherit;">5</a></span>
-                </div>
+                </div> -->
 
 
             </div>
@@ -145,10 +151,10 @@
                         <div class="custom-list" style="margin-left: -15px;">
                             <ul class="fa-ul">
                                 <li><span class="fa-li">
-                                    <i class="fa-solid fa-location-dot fs-5"
+                                        <i class="fa-solid fa-location-dot fs-5"
                                             style="color: #119706"></i></span>Nouakchott - Mauritanie</li>
-                                    
-                                            
+
+
                                 <li><span class="fa-li"><i class="fa-solid fa-user-group fs-5"
                                             style="color: #119706"></i></span>+ 956 agricultural cooperatives mentored
                                 </li>
@@ -288,51 +294,74 @@
             const div3 = document.getElementById('3')
             const div4 = document.getElementById('4')
             const div5 = document.getElementById('5')
+            document.getElementById("svgObject").addEventListener('load', function () {
+                var svgDocument = this.contentDocument;
+                var pathElement1 = svgDocument.getElementById("1");
+                var pathElement2 = svgDocument.getElementById("2");
+                var pathElement3 = svgDocument.getElementById("3");
+                var pathElement4 = svgDocument.getElementById("4");
+                var pathElement5 = svgDocument.getElementById("5");
 
-            function target1() {
-                div1.style = "scale :1.1"
+                pathElement1.style= "cursor : pointer";
+                pathElement2.style = "cursor : pointer";
+                pathElement3.style = "cursor : pointer";
+                pathElement4.style = "cursor : pointer";
+                pathElement5.style = "cursor : pointer";
 
-                // After the animation duration, remove the class to reset for the next click
-                setTimeout(function () {
-                    div1.style.scale = "1"
-                }, 500); // 500 milliseconds, should match the transition duration in CSS
-            }
-            function target2() {
-                div2.style = "scale :1.1"
 
-                // After the animation duration, remove the class to reset for the next click
-                setTimeout(function () {
-                    div2.style.scale = "1"
-                }, 500); // 500 milliseconds, should match the transition duration in CSS
-            }
-            function target3() {
-                div3.style = "scale :1.1"
+                pathElement1.addEventListener('click', function () {
+                    div1.style = "scale :1.1"
+                    div1.scrollIntoView({behavior : 'smooth'})
+                    setTimeout(function () {
+                        div1.style.scale = "1"
+                    }, 500); // 500 millisecon
+                })
 
-                // After the animation duration, remove the class to reset for the next click
-                setTimeout(function () {
-                    div3.style.scale = "1"
-                }, 500); // 500 milliseconds, should match the transition duration in CSS
-            }
-            function target4() {
-                div4.style = "scale :1.1"
+                pathElement2.addEventListener('click', function () {
+                    div2.style = "scale :1.1"
+                    div2.scrollIntoView({behavior : 'smooth'})
 
-                // After the animation duration, remove the class to reset for the next click
-                setTimeout(function () {
-                    div4.style.scale = "1"
-                }, 500); // 500 milliseconds, should match the transition duration in CSS
-            }
-            function target5() {
-                div5.style = "scale :1.1"
+                    // After the animation duration, remove the class to reset for the next click
+                    setTimeout(function () {
+                        div2.style.scale = "1"
+                    }, 500);
+                })
+                pathElement3.addEventListener('click', function () {
+                    div3.style = "scale :1.1"
+                    div3.scrollIntoView({behavior : 'smooth'})
 
-                // After the animation duration, remove the class to reset for the next click
-                setTimeout(function () {
-                    div5.style.scale = "1"
-                }, 500); // 500 milliseconds, should match the transition duration in CSS
-            }
+                    // After the animation duration, remove the class to reset for the next click
+                    setTimeout(function () {
+                        div3.style.scale = "1"
+                    }, 500);
+                })
+                pathElement4.addEventListener('click', function () {
+                    div4.style = "scale :1.1"
+                    div4.scrollIntoView({behavior : 'smooth'})
+
+                    // After the animation duration, remove the class to reset for the next click
+                    setTimeout(function () {
+                        div4.style.scale = "1"
+                    }, 500);
+                })
+                pathElement5.addEventListener('click', function () {
+                    div5.style = "scale :1.1"
+                    div5.scrollIntoView({behavior : 'smooth'})
+
+                    // After the animation duration, remove the class to reset for the next click
+                    setTimeout(function () {
+                        div5.style.scale = "1"
+                    }, 500);
+                })
+
+
+            })
+
+
 
         </script>
         <!-- Footer -->
-        <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white">
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white mt-5">
             <div class="container text-center">
                 <small>&copy; 2023 Sonader. Tous droits réservés.</small>
             </div>
